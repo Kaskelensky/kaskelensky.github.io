@@ -1,0 +1,506 @@
+html {
+  scroll-behavior: smooth;
+  transition: 0.2 ease-out;
+}
+html, body{
+  overflow-x: hidden!important;
+	margin:0!important;
+	padding:0;
+}
+.header-area{
+  position: absolute;
+  display:flex;
+  height:15vh;
+  padding-left:5vw;
+  padding-right:5vw;
+  -webkit-transition: all 0.3s ease 0s;
+  -moz-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+}
+.sticky{
+  position:fixed;
+  z-index: 5;
+  background-color: #fff;
+  -webkit-transition: all 0.3s ease 0s;
+  -moz-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+}
+.sticky a{
+  color:black!important;
+}
+.navbar a{
+  color:white;
+}
+.navbar a:hover{
+  color:white;
+  cursor:pointer;
+}
+#logo{
+  height:15vh;
+}
+.logo{
+  width:45vw;
+}
+.navbar{
+  width:45vw;
+  display: flex;
+  justify-content: center;
+  align-items:center;
+}
+.welcome-area{
+  padding-top: 15vh;
+  height:100vh;
+  display:flex;
+  background-image: url('banner-bg.png');
+  background-size: cover;
+  color:white;
+  padding-left:5vw;
+  padding-right:5vw;
+  justify-content: center;
+  align-items:center;
+}
+.welcome-left-side, .welcome-right-side{
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items:center;
+  width:45vw;
+}
+.welcome-right-side img{
+  height:70vh;
+}
+.welcome-left-side h1{
+  margin-bottom:10%;
+}
+.welcome-left-side a{
+  margin-top:5%;
+  color:white;
+  background-color: #FF3551;
+  border:none;
+  padding:3% 7%;
+  border-radius:50px;
+}
+#about{
+  padding-left:5vw;
+  padding-right:5vw;
+  display: flex;
+  justify-content: center;
+  align-items:center;
+  padding-top:5%;
+}
+.about-left{
+  width:60vw;
+  display: flex;
+  justify-content: center;
+  align-items:center;
+}
+.about-right{
+  width:30vw;
+}
+.about-left img{
+  width:70%;
+}
+.about-right a{
+  background-color: #15ABB4;
+  color:white!important;
+  padding:2% 5%;
+  border-radius:50px;
+}
+.about-right h2{
+  margin-bottom:5%;
+}
+.slideshow-container {
+  height:80vh!important;
+  width:60vw;
+  position: relative;
+  margin: auto;
+  padding-top:5%;
+}
+
+.mySlides {
+  display:none;
+  text-align:center;
+}
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+.text {
+  color: #13a1e2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+#questions{
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top:10%;
+  padding-bottom:10%;
+}
+.questions-main{
+  display:flex;
+}
+#questions h2{
+  margin-bottom:5%;
+}
+.q-left, .q-right{
+  width:40vw;
+  padding-left:5vw;
+  padding-right:5vw;
+}
+#firstP, #secondP, #thirdP{
+  display:none;
+  padding:2% 5%;
+}
+.q-right button{
+  width:100%;
+  border:none;
+  background-color: #EEEEEE;
+  padding:2% 5%;
+}
+.q-right button:hover{
+  background-color: #CCCCCC;
+}
+footer{
+  padding-left:15vw;
+  padding-right: 15vw;
+  background: linear-gradient(to right,#02B6CD, #0092E2);
+  color:white;
+  padding-top:5%;
+  padding-bottom:5%;
+  display:flex!important;
+  justify-content: center;
+  align-items: center;
+}
+footer h2{
+  margin-bottom:15%;
+}
+footer a{
+  color:white;
+}
+@media (max-width: 800px) {
+  .navbar{
+    display:none!important;
+  }
+  header{
+    text-align:center!important;
+    width:100%;
+    overflow-x: hidden!important;
+  }
+  .logo{
+    width:100%;
+  }
+  .logo img{
+    height:12vh!important;
+  }
+  .welcome-area{
+    flex-direction: column;
+    padding-top:0!important;
+  }
+  .welcome-area h1{
+    font-size:1.5em;
+  }
+  .welcome-area img{
+    width:100%;
+    height:100%!important;
+  }
+  .about-left{
+    width:30%;
+  }
+  .about-right{
+    width:70%!important;
+    font-size:1em!important;
+    padding-bottom:5vh;
+  }
+  .slideshow-container{
+    width:100vw;
+  }
+  .mySlides{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align:center!important;
+  }
+  .mySlides img{
+    width:100%!important;
+    height:100%!important;
+    margin:auto!important;
+  }
+  .text{
+    background-color: #fff;
+    bottom:0px!important;
+  }
+  .questions-main{
+    flex-direction: column!important;
+    justify-content: center;
+    align-items: center;
+  }
+  .q-left, .q-right{
+    width:80%!important;
+  }
+  .q-right button{
+    padding:4% 5%;
+  }
+  input, textarea, label{
+    font-size:0.9em!important;
+  }
+  .zz{
+    font-size:0.9em!important;
+  }
+}
+
+
+
+html {
+  scroll-behavior: smooth;
+  transition:0.2 ease-out;
+}
+
+.todoListMain .header textarea {
+  margin: auto;
+  margin-top: 5%;
+  padding: 1.6%;
+  font-size: 1em;
+  width: 100%;
+  height: 50%;
+  resize: none;
+  font-weight: 200;
+  margin-bottom: 5%;
+  color: black;
+  border-radius: 5px;
+}
+.todoListMain .header p {
+  color: black;
+  font-weight: 300;
+  color: white;
+}
+@media screen and (max-width: 1200px) {
+  .zum{
+    margin-top:5%;
+  }
+  .label{
+    margin-top:3%;
+  }
+
+#weekly:checked + div, #second:checked + div,#third:checked + div  {
+  margin-top: 3%!important;
+  margin-left: 5%;
+}
+}
+.todoListMain {
+  font-size: 16px;
+  background-color: #13a1e2;
+  border:none;
+  padding:2% 5%;
+}
+.todoListMain span {
+  color: black;
+  padding: 5%;
+  font-weight: bold;
+}
+.todoListMain .header button {
+  padding: 2%;
+  margin: auto;
+  background-color: white;
+  color: #13a1e2;
+  border-radius: 10px;
+  width: 70%;
+  font-family: "Gill Sans", sans-serif;
+  font-weight: 500;
+  font-size:1.1em;
+}
+
+.todoListMain .header button:hover {
+  background-color: #378ae9;
+  border: 2px solid #378ae9;
+  cursor: pointer;
+  color:white;
+}
+
+.todoListMain .theList li {
+  color: silver;
+  padding: 5px;
+  list-style: none;
+  font-family: "Gill Sans", sans-serif;
+  font-style: italic;
+  transition: 0.2 ease-out;
+  text-align: center;
+}
+
+.todoListMain .theList li:hover {
+  background-color: rgb(235, 232, 232);
+  cursor: pointer;
+}
+ul.theList {
+  padding: 0;
+}
+.rbs{
+  text-align:left;
+  border: 2px solid white;
+  padding:4%;
+  width:90%;
+  color:white;
+  background-color: #13a1e2;
+}
+input[type=radio] {
+    display: none;
+}
+
+.label{
+    text-align:left;
+  border: 2px solid white;
+  width:100%;
+}
+.lab:hover{
+  cursor:pointer;
+}
+#weekly:checked + div, #second:checked + div,#third:checked + div  {
+  background-color:white!important;
+  margin-top: 5%;
+  color:#13a1e2;
+  border:none;
+}
+.lab{
+  width:100%;
+  height:100%;
+  padding: 4%;
+}
+
+
+.rbs:hover{
+  cursor:pointer;
+}
+.input {
+  border: 1px solid #13a1e2;
+  border-radius: 5px;
+  padding: 3%;
+  font-size: 0.9em;
+  font-family: "Gill Sans", sans-serif;
+  font-weight: 300;
+  width: 100%;
+  height: 100%;
+}
+.select {
+  font-size: 0.9em;
+  font-family: "Gill Sans", sans-serif;
+  font-weight: 300;
+  width: 100%;
+  height: 100%;
+  padding: 3%;
+  border:1px solid #13a1e2;
+  color:grey;
+}
+.ins{
+  margin-top:3%;
+}
+.radio-inline{
+  color:white!important;
+  font-size:1.2em;
+  text-align:left;
+  white-space: nowrap;
+}
+.inputs {
+  margin-top: 5%;
+  text-align: center;
+}
+.textt {
+  text-align: center;
+  font-size: 2em;
+  font-family: "Gill Sans", sans-serif;
+  font-weight: 200;
+  color:white;
+}
+label i{
+  margin-left:2%;
+  margin-right:2%;
+}
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #09d3ac;
+}
