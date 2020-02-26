@@ -46,8 +46,9 @@
       <div class="navbar">
         <a href="#about">О нас</a>
         <a href="#react">Заказать звонок</a>
-        <a href="#slider">Наша работа</a>
-        <a href="#questions">Контакты/Вопросы</a>
+        <!-- <a href="#slider">Наша работа</a> -->
+        <a href="#questions">Наша продукция</a>
+        <a href="#questions">Контакты</a>
       </div>
     </header>
     <div class="welcome-area">
@@ -58,16 +59,20 @@
         </div>
       </div>
       <div class="welcome-right-side">
-        <img src="images/okno.png" alt="">
+        <img src="images/okno.png">
       </div>
     </div>
     <div id="about">
       <div class="about-left">
-        <img src="images/stroi.png" alt="">
+        <img src="images/stroi.png">
       </div>
       <div class="about-right">
         <h2><strong>О нас</strong></h2>
-        <p>Стаж в сфере ремонта холодильников более 20 лет. Гарантия 6 месяцев от даты ремонта. Продажа и скупка б/у холодильников. Работаем в любой точке города. </p>
+        <p>Наша компания работает на рынке более 10 лет! Имеет собственный цех по качественному производству отвечающих современным требованиям таких изделий, как пластиковые окна, витражи, двери, балконные перегородки, а также ролл-шторы и натяжные потолки! 
+          Штат компании укомплектован квалифицированными специалистами, прошедшими специальное обучение!</p>
+          <h2><strong>Специальные предложения</strong></h2>
+        <p>Нашим партнёрам (строительные компании, агентства недвижимости и т.д.), а также постоянным клиентам и оптовым покупателям предусмотрены скидки!</p>
+        <br>
         <a href="#react">Оставить заявку</a>
       </div>
     </div>
@@ -78,41 +83,15 @@
       </div>
         <div class="header">
           <form class="container inputs form-group" onsubmit="sendRequest()">
-            <!-- <div class="row">
-              <div class="radio-inline col-xl">
-<input id="weekly" type="radio" name="lists[weekly]" value="True" />
-<div class="label">    
-
-<label class="lab" for="weekly"><i class="fa fa-wrench"></i>Ремонт</label>
-</div>
-                  
-                </div>
-                <div class="radio-inline col-xl">
-                <input id="second" type="radio" name="lists[weekly]" value="True" />
-<div class="label">    
-
-<label class="lab" for="second"> <i class="fa fa-question-circle"></i>Диагностика</label>
-</div>
-                  
-                </div>
-                <div class="radio-inline col-xl">
-                <input id="third" type="radio" name="lists[weekly]" value="True" />
-<div class="label">    
-
-<label class="lab" for="third"> <i class="fa fa-handshake"></i>Продажа на запчасти</label>
-</div>
-
-                </div>
-            </div> -->
-            <div class="row ins"> 
-              <!-- <div class="col-xl flex zum">
+            <div class="row ins">
+              <div class="col-xl flex zum">
                 <input
                   class="input form-control"
                   type="text"
                   placeholder="Ваше имя:"
                   id="first-name"
                 />
-              </div> -->
+              </div>
               <div class="col-xl flex zum">
                 <input
                   class="input form-control"
@@ -121,93 +100,52 @@
                   id="phone-number"
                 />
               </div>
-              <!-- <div class="col-xl flex zum">
-                <input
-                  placeholder="Ваш адрес:"
-                  class="input form-control"
-                  type="text"
-                  id="address"
-                />
-              </div> -->
             </div>
-            <!-- <div class="row">
-              <div class="col-xl flex">
-                <textarea class="form-control"
-                  maxLength="70"
-                  id="description-text"
-                ></textarea>
-              </div>
-            </div> -->
             <div class="row">
               <div class="col-xl flex">
                 <br/>
                 <br/>
-                <p>Оставьте номер телефона, мы вам перезвоним</p>
+                <p>Оставьте номер телефона, а мы перезвоним</p>
                 <br/>
                 <br/>
               </div>
             </div>
             <div class="row">
               <div class="col-xl flex">
-                <button class="btn" type="submit">Отправить </button>
+                <button class="btn" type="submit">Отправить</button>
               </div>
             </div>
           </form>
         </div>
       </div>
     </div>
-    <div class="slideshow-container" id="slider">
-
-      <div class="mySlides fade">
-        <div class="numbertext">1 / 3</div>
-        <img src="images/img1.jpeg" style="height:50vh!important">
-        <div class="text">Холодильник INDESIT<br/> Цена: 50000тг.</div>
-      </div>
-
-      <div class="mySlides fade">
-        <div class="numbertext">2 / 3</div>
-        <img src="images/img2.jpeg" style="height:50vh!important">
-        <div class="text">Холодильник INDESIT<br/> Цена: 50000тг.</div>
-      </div>
-
-      <div class="mySlides fade">
-        <div class="numbertext">3 / 3</div>
-        <img src="images/img3.jpeg" style="height:50vh!important">
-        <div class="text">Холодильник INDESIT<br/> Цена: 50000тг.</div>
-      </div>
-
-      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-      <a class="next" onclick="plusSlides(1)">&#10095;</a>
-    </div>
-    <br>
-
-    <div style="text-align:center">
-      <span class="dot" onclick="currentSlide(1)"></span>
-      <span class="dot" onclick="currentSlide(2)"></span>
-      <span class="dot" onclick="currentSlide(3)"></span>
-    </div>
     <div id="questions">
-      <h2><strong>Частые вопросы</strong></h2>
-      <div class="questions-main">
-        <div class="q-left">
-          <h4>Дополнительная информация</h4>
-          <p>Если холодильник перестает работать, не спешите ставить на него крест. После ремонта он может отслужить вам еще столько же времени:)</p>
+      <h2><strong>Наша продукция</strong></h2>
+      <div class="questions-inside">
+        <div class="questions-inside-in">
+          <img src="images/oknadverivetraji.png" style="height:15vh!important">
+          <h4>Окна, двери, витражи</h4>
+          <a href="http://starplast.kz/%D0%9E%D0%BA%D0%BD%D0%B0-%D0%B4%D0%B2%D0%B5%D1%80%D0%B8-%D0%B2%D0%B8%D1%82%D1%80%D0%B0%D0%B6%D0%B8/" target="_blank">Подробнее</a>
         </div>
-        <div class="q-right">
-          <button onclick="myFun(0)">Как с нами связаться?</button>
-          <div id="firstP">
-            Оставьте заявку на сайте, в самое ближайшее время мастер с вами свяжется.
-          </div>
-          <button onclick="myFun(1)">Какие гарантии того, что холодильник снова не перестанет работать?</button>
-          <div id="secondP">
-            Большинство неисправностей связаные с ремонтом выявляются в течении шести месяцев. А если он проработал шесть месяцев, то будет работать и дальше. Поэтому если в течении шести месяцев по нашей вине холодильник перестанет работать, мы приедем и все исправим.
-          </div>
-          <button onclick="myFun(2)">Как правильно оставить заявку?</button>
-          <div id="thirdP">
-            Если вы знаете проблему, и настроены ремонтировать холодильник, вам нужно выбрать пункт "Ремонт".
-            Если вы хотите узнать, что случилось с холодильником, выберите "Диагностика".
-            Если вы имеете холодильник, который хотите продать, мы купим его на запчасти, вам стоит выбрать "Продажа на запчасти"
-          </div>
+        <div class="questions-inside-in">
+          <img src="images/zamkiblok.jpg" style="height:15vh!important">
+          <h4>Замки-блокираторы</h4>
+          <a href="http://starplast.kz/%D0%97%D0%B0%D0%BC%D0%BA%D0%B8-%D0%B1%D0%BB%D0%BE%D0%BA%D0%B8%D1%80%D0%B0%D1%82%D0%BE%D1%80%D1%8B/" target="_blank">Подробнее</a>
+        </div>
+        <div class="questions-inside-in">
+          <img src="images/podokonniki.png" style="height:15vh!important">
+          <h4>Подоконники</h4>
+          <a href="http://starplast.kz/%D0%9F%D0%BE%D0%B4%D0%BE%D0%BA%D0%BE%D0%BD%D0%BD%D0%B8%D0%BA%D0%B8/" target="_blank">Подробнее</a>
+        </div>
+        <div class="questions-inside-in">
+          <img src="images/moskitka.png" style="height:15vh!important">
+          <h4>Москитные сетки</h4>
+          <a href="http://starplast.kz/%D0%9C%D0%BE%D1%81%D0%BA%D0%B8%D1%82%D0%BD%D1%8B%D0%B5-%D1%81%D0%B5%D1%82%D0%BA%D0%B8/" target="_blank">Подробнее</a>
+        </div>
+        <div class="questions-inside-in">
+          <img src="images/air.png" style="height:15vh!important">
+          <h4>Воздушные клапаны Air-Box</h4>
+          <a href="http://starplast.kz/%D0%92%D0%BE%D0%B7%D0%B4%D1%83%D1%88%D0%BD%D1%8B%D0%B5-%D0%BA%D0%BB%D0%B0%D0%BF%D0%B0%D0%BD%D1%8B-Air-Box/" target="_blank">Подробнее</a>
         </div>
       </div>
     </div>
@@ -216,11 +154,17 @@
         <h2><strong>Контакты</strong></h2>
         <div class="telega">
           <i class="fa fa-instagram"> </i>
-          <a href="https://www.instagram.com/starplast.ns">@STARPLAST.NS</a>
+          <a href="https://www.instagram.com/starplast.ns" target="_blank">@STARPLAST.NS</a>
         </div>
+        <br>
         <div class="nomer">
           <i class="fa fa-phone-square phone"> </i>
-          <a href="tel:+77016749748" class="disabled">+ 7 (702) 531 79 14</a>
+          <a href="tel:+77051463168" class="disabled">+7 (705) 146 31 68</a>
+        </div>
+        <br>
+        <div class="address">
+          <a href="https://2gis.kz/pavlodar/firm/70000001018633151/center/76.9584%2C52.2977/zoom/16.3687" target="
+          _blank" class="disabled">Торайгырова, 64, цокольный этаж; 8 кабинет, Павлодар</a>
         </div>
       </div>
     </footer>
@@ -229,17 +173,6 @@
   src="https://code.jquery.com/jquery-2.2.4.min.js"
   integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
   crossorigin="anonymous"></script>
-  <script>
-    function myFun(i){
-      var q  = ["firstP", "secondP", "thirdP"];
-      var x = document.getElementById(q[i]);
-      if (x.style.display === "block") {
-        x.style.display = "none";
-      } else {
-        x.style.display = "block";
-      }
-    }
-  </script>
   <script>
     $(window).scroll(function() {
       var scroll = $(window).scrollTop();
@@ -271,30 +204,25 @@
       slides[slideIndex-1].style.display = "flex";
     slides[slideIndex-1].style.justifyContent = "center";
     slides[slideIndex-1].style.alignItems = "center";
-      setTimeout(showSlides, 2000);
+      setTimeout(showSlides, 1500);
     }
 	  function sendRequest(){
       var first_name = document.getElementById("first-name").value;
       var phone_number = document.getElementById("phone-number").value;
-      var address = document.getElementById("address").value;
-      var description_text = document.getElementById("description-text").value;
       var xhr = new XMLHttpRequest();
       xhr.open(
         "GET",
-        "https://api.telegram.org//sendMessage?chat_id=855636692&parse_mode=html&text=Сообщение с сайта:" +
-          "%0AИмя: " +
+        "https://api.telegram.org/bot988655254:AAEt4sMf6qmAkILIqFI_RQ_GHSbwQTrfqlE/sendMessage?chat_id=-1001241869906&text=" +
+          "Имя: " +
           first_name +
-          "%0AНомер телефона: " +
-          phone_number +
-          "%0AАдрес: " +
-          address +
-          "%0AОписание: " +
-          description_text,
-        true
+          " |||  Номер телефона: " +
+          phone_number,
+        false
       );
-      console.log("privet")
-      console.log(first_name, phone_number, address, description_text)
+      // console.log("privet")
+      // console.log(first_name, phone_number)
       xhr.send();
     }
   </script>
 </html>
+<!-- https://api.telegram.org/bot988655254:AAEt4sMf6qmAkILIqFI_RQ_GHSbwQTrfqlE/sendMessage?chat_id=620298334&text=%D0%A2%D0%95%D0%9A%D0%A1%D0%A2 -->

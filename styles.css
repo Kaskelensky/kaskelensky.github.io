@@ -7,6 +7,10 @@ html, body{
 	margin:0!important;
 	padding:0;
 }
+h4 {
+  text-align: center;
+  padding: 10%;
+}
 .header-area{
   position: absolute;
   display:flex;
@@ -201,8 +205,21 @@ html, body{
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding-top:10%;
-  padding-bottom:10%;
+  padding-top:5%;
+  padding-bottom:5%;
+}
+.questions-inside {
+  display:flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.questions-inside-in {
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 5%;
 }
 .questions-main{
   display:flex;
@@ -237,6 +254,12 @@ footer{
   padding-bottom:5%;
   display:flex!important;
   justify-content: center;
+  align-items: center;
+}
+.footer-left {
+  display:flex!important;
+  justify-content: center;
+  flex-direction: column;
   align-items: center;
 }
 footer h2{
@@ -299,6 +322,11 @@ footer a{
     bottom:0px!important;
   }
   .questions-main{
+    flex-direction: column!important;
+    justify-content: center;
+    align-items: center;
+  }
+  .questions-inside{
     flex-direction: column!important;
     justify-content: center;
     align-items: center;
