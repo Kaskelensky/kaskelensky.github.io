@@ -86,13 +86,53 @@ h4 {
   padding:3% 7%;
   border-radius:50px;
 }
-#about{
+#about, #spec{
   padding-left:5vw;
   padding-right:5vw;
   display: flex;
   justify-content: center;
   align-items:center;
   padding-top:5%;
+}
+#galery111 {
+  padding-left:5vw;
+  padding-right:5vw;
+  display: flex;
+  justify-content: center;
+  align-items:center;
+  flex-direction: column;
+  padding-top:5%;
+  padding-bottom:5%;
+  background: linear-gradient(to right,#02B6CD, #0092E2);
+}
+#photo-galery {
+  display: flex;
+  justify-content: center;
+  align-items:center;
+  flex-direction: row;
+}
+.gallery {
+  margin: 5px;
+  border: 1px solid #ccc;
+  float: left;
+  width: 180px;
+}
+
+.gallery:hover {
+  border: 1px solid #777;
+}
+
+.gallery img {
+  width: 100%;
+  height: auto;
+}
+
+.desc {
+  padding: 15px;
+  text-align: center;
+}
+#spec {
+  padding-bottom: 5%;
 }
 .about-left{
   width:60vw;
@@ -246,8 +286,8 @@ h4 {
   background-color: #CCCCCC;
 }
 footer{
-  padding-left:15vw;
-  padding-right: 15vw;
+  padding-left:15vh;
+  padding-right: 15vh;
   background: linear-gradient(to right,#02B6CD, #0092E2);
   color:white;
   padding-top:5%;
@@ -255,8 +295,15 @@ footer{
   display:flex!important;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
 }
 .footer-left {
+  display:flex!important;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+.footer-right {
   display:flex!important;
   justify-content: center;
   flex-direction: column;
@@ -346,7 +393,6 @@ footer a{
 }
 
 
-
 html {
   scroll-behavior: smooth;
   transition:0.2 ease-out;
@@ -381,6 +427,9 @@ html {
 #weekly:checked + div, #second:checked + div,#third:checked + div  {
   margin-top: 3%!important;
   margin-left: 5%;
+}
+#photo-galery {
+  flex-direction: column;
 }
 }
 .todoListMain {
